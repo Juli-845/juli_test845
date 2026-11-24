@@ -1,35 +1,72 @@
-
 <!DOCTYPE html>
 <html>
+
 <head>
-    <title>My First Web Page</title>
 
-    <style>
-        body {
-            background-color: lightblue;
-            text-align: center;
-            font-family: Arial;
-        }
-
-        h1 {
-            color: darkblue;
-        }
-
-        p {
-            font-size: 20px;
-        }
-    </style>
+    <title>CONTACT FORM</title>
 </head>
 
 <body>
 
-    <h1>Welcome to My Web Page</h1>
+    <h2>Student Registration Form</h2>
 
-    <p>This is my first webpage using HTML.</p>
+    <form>
+        <table border="1">
+            <tr>
+                <th colspan="2">Student Details</th>
+            </tr>
 
-    <h2>About Me</h2>
+            <tr>
+                <td>Full Name</td>
+                <td><input type="text" placeholder="Enter your name" required></td>
+            </tr>
 
-    <p>I am learning HTML, CSS, Git and GitHub.</p>
+            <tr>
+                <td>Email</td>
+                <td><input type="email" placeholder="Enter your email" required></td>
+            </tr>
+
+            <tr>
+                <td>Phone Number</td>
+                <td><input type="tel" placeholder="Enter phone number"></td>
+            </tr>
+
+            <tr>
+                <td>Gender</td>
+                <td>
+                    <input type="radio" name="gender" value="Male"> Male
+                    <input type="radio" name="gender" value="Female"> Female
+                </td>
+            </tr>
+
+            <tr>
+                <td>Course</td>
+                <td>
+                    <select>
+                        <option>BCA</option>
+                        <option>B.Tech</option>
+                        <option>MCA</option>
+                        <option>BBA</option>
+                    </select>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Address</td>
+                <td>
+                    <textarea rows="4" placeholder="Enter address"></textarea>
+                </td>
+            </tr>
+
+            <tr>
+                <td colspan="2" style="text-align:center">
+                    <button type="submit">Submit</button>
+                    <button type="reset">Reset</button>
+                </td>
+            </tr>
+        </table>
+    </form>
 
 </body>
+
 </html>
